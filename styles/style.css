@@ -1,0 +1,127 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #D7CCC8;
+    width: 80%;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+.header_container {
+    margin-top: 60px;
+    padding: 20px 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.header_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_content h1 {
+    color: #1e1e1e;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.header_content i {
+    color: #333333;
+}
+
+.cards_container {
+    display: flex;
+    gap: 30px;
+    padding: 10px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.cat_card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 240px;
+    transition: transform 0.3s ease;
+}
+
+.cat_card:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.card_img_container {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card_img_container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card_btn_container {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.like-btn, .dislike-btn {
+    border: none;
+    background-color: white;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 22px;
+    color: #525252;
+}
+
+.new_cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    padding-left: 10px;
+}
+
+.new_cards-btn {
+    border: none;
+    background-color: #000;
+    color: #fff;
+    font-size: 22px;
+    border-radius: 20px;
+    padding: 20px;
+    cursor: pointer;
+}
+.new_cards-btn:hover {
+    opacity: 0.9;
+}
+
+
+@media screen and (max-width: 767px) {
+    .header_content h1 {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 567px) {
+    .header_content h1 {
+        font-size: 20px;
+    }
+}
