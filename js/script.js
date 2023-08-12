@@ -1,10 +1,10 @@
 
 const cardContainer = document.querySelector(".cards_container");
-const newImgButton = document.querySelector(".new_cards-btn")
-const accessKey = "dKWJiVIpyPbkKbUkXzmObUTRgUWSipOf5Q_4XORENPI"
+const newImgButton = document.querySelector(".new_cards-btn");
+const accessKey = "dKWJiVIpyPbkKbUkXzmObUTRgUWSipOf5Q_4XORENPI";
 
 
-newImgButton.addEventListener("click", fetchImages)
+newImgButton.addEventListener("click", fetchImages);
 
 // Buscar 10 imagens de gatos da API
 async function fetchImages() {
@@ -77,4 +77,4 @@ function handleDislike(event) {
 }
 
 
-fetchImages()
+fetchImages();
